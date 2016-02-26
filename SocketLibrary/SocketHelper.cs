@@ -18,6 +18,7 @@ namespace SocketLibrary
 
     public class SocketHelper
     {
+        // jäsenmuuttujat
         private TcpClient client;
         private NetworkStream ns;
         private StreamWriter sw;
