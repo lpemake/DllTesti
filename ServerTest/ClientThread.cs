@@ -50,6 +50,7 @@ namespace ServerTest
                     string vastaus = "";
                     // päivitetään aika
                     t = DateTime.Now;
+                    // haarautuminen komennon mukaan
                     switch (komento)
                     {
                         case COMMANDS.TIME:
