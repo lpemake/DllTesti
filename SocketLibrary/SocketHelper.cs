@@ -23,6 +23,10 @@ namespace SocketLibrary
         private StreamWriter sw;
         private StreamReader sr;
 
+        /// <summary>
+        /// konstruktori
+        /// </summary>
+        /// <param name="client"></param>
         public SocketHelper(TcpClient client)
         {
             this.client = client;

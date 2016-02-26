@@ -14,6 +14,7 @@ namespace ServerTest
     {
         static void Main(string[] args)
         {
+            // huom: luocal host
             IPAddress address = IPAddress.Parse("127.0.0.1");
             TcpListener tcpListener = new TcpListener(address, 9000);
             tcpListener.Start();
@@ -27,7 +28,7 @@ namespace ServerTest
 
                 ClientThread clientThread = new ClientThread(client);
                 Thread thread = new Thread(clientThread.ServeClient);
-
+                // käynnistetään säie
                 thread.Start();
 
             }
